@@ -1,0 +1,60 @@
+/* Reports.css */
+
+.container-fluid {
+  min-height: 100vh;
+}
+
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.bg-white.card {
+  background-color: #ffffff;
+  border: 1px solid #e9ecef;
+}
+
+.bg-dark.card {
+  background-color: #212529;
+  border: 1px solid #373b3e;
+}
+
+.bg-dark .text-muted {
+  color: #adb5bd;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.small {
+  font-size: 0.875rem;
+}
+
+.bg-light-subtle {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.bg-dark .bg-light-subtle {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.recharts-default-tooltip {
+  border-radius: 8px;
+  border: 1px solid #444;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .d-flex.justify-content-between {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+}
