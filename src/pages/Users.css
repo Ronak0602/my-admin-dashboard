@@ -127,3 +127,20 @@
 .bg-dark .form-select {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
 }
+
+.bg-dark .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7) !important; 
+  opacity: 1;
+}
+
+.bg-dark .form-control::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.bg-dark .form-control::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.bg-dark .form-control:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}

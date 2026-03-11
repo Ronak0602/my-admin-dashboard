@@ -105,8 +105,13 @@ const UsersPage = ({ isDarkMode }) => {
       >
         <div className="card-header bg-transparent border-bottom py-3">
           <div className="input-group" style={{ maxWidth: "350px" }}>
-            <span className="input-group-text bg-transparent border-end-0">
-              <Search size={18} className="text-muted" />
+            <span
+              className={`input-group-text bg-transparent border-end-0 ${isDarkMode ? "border-secondary" : ""}`}
+            >
+              <Search
+                size={18}
+                className={isDarkMode ? "text-white" : "text-muted"}
+              />
             </span>
             <input
               type="text"
