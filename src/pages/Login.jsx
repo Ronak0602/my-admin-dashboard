@@ -31,7 +31,6 @@ const Login = ({ onLogin }) => {
         </div>
 
         <form onSubmit={handleLoginSubmit}>
-          {/* Email Field */}
           <div className="mb-3">
             <label className="form-label small fw-bold text-secondary">
               Email Address
@@ -51,7 +50,6 @@ const Login = ({ onLogin }) => {
             </div>
           </div>
 
-          {/* Password Field */}
           <div className="mb-4">
             <label className="form-label small fw-bold text-secondary">
               Password

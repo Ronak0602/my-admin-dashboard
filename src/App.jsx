@@ -45,7 +45,6 @@ function App() {
     <Router>
       <Toaster position="top-right" reverseOrder={false} />
 
-      {/* --- CUSTOM LOGOUT MODAL --- */}
       {showLogoutModal && (
         <div className="logout-overlay">
           <div

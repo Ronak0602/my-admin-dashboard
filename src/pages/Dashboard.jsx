@@ -64,7 +64,6 @@ const Dashboard = ({ isDarkMode }) => {
 
   return (
     <div className="container-fluid p-0">
-      {/* Stat Cards Row */}
       <div className="row mt-4">
         {stats.map((item, index) => (
           <div className="col-lg-3 col-6" key={index}>
@@ -89,7 +88,6 @@ const Dashboard = ({ isDarkMode }) => {
         ))}
       </div>
 
-      {/* Sales Report Chart Row */}
       <div className="row">
         <div className="col-lg-12">
           <div
@@ -103,7 +101,6 @@ const Dashboard = ({ isDarkMode }) => {
               >
                 Sales Report ({activeChart})
               </h6>
-              {/* 3. Buttons ko dynamic banaya */}
               <div className="btn-group btn-group-sm">
                 <button
                   className={`btn ${activeChart === "Area" ? "btn-primary" : "btn-outline-primary"}`}
@@ -122,7 +119,6 @@ const Dashboard = ({ isDarkMode }) => {
             <div className={`card-body ${isDarkMode ? "bg-dark" : "bg-white"}`}>
               <div style={{ width: "100%", height: 300, minWidth: 0 }}>
                 <ResponsiveContainer width="100%" height="100%">
-                  {/* 4. Conditional Rendering ka use kiya */}
                   {activeChart === "Area" ? (
                     <AreaChart data={data}>
                       <defs>
