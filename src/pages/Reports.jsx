@@ -20,12 +20,12 @@ const Reports = ({ isDarkMode }) => {
   const reportRef = useRef();
 
   const salesData = [
-    { name: "Jan", sales: 4000, orders: 240 },
-    { name: "Feb", sales: 3000, orders: 198 },
-    { name: "Mar", sales: 5000, orders: 305 },
-    { name: "Apr", sales: 2780, orders: 150 },
-    { name: "May", sales: 1890, orders: 120 },
-    { name: "Jun", sales: 2390, orders: 190 },
+    { name: "Jan", sales: 4000 },
+    { name: "Feb", sales: 3000 },
+    { name: "Mar", sales: 5000 },
+    { name: "Apr", sales: 2780 },
+    { name: "May", sales: 1890 },
+    { name: "Jun", sales: 2390 },
   ];
 
   const pieData = [
@@ -111,11 +111,11 @@ const Reports = ({ isDarkMode }) => {
       <div className="row">
         <div className="col-md-8 mb-4">
           <div
-            className={`card border-0 shadow-sm p-4 h-100 ${isDarkMode ? "bg-dark text-white" : "bg-white"}`}
+            className={`card border-0 shadow-sm p-4 h-100 ${isDarkMode ? "bg-dark text-white border-secondary" : "bg-white"}`}
           >
             <h5 className="mb-4 fw-bold">Sales Overview</h5>
             <div style={{ width: "100%", height: 300 }}>
-              <ResponsiveContainer>
+              <ResponsiveContainer width="100%" height="100%">
                 <AreaChart data={salesData}>
                   <defs>
                     <linearGradient id="colorSales" x1="0" y1="0" x2="0" y2="1">
@@ -164,11 +164,11 @@ const Reports = ({ isDarkMode }) => {
 
         <div className="col-md-4 mb-4">
           <div
-            className={`card border-0 shadow-sm p-4 h-100 ${isDarkMode ? "bg-dark text-white" : "bg-white"}`}
+            className={`card border-0 shadow-sm p-4 h-100 ${isDarkMode ? "bg-dark text-white border-secondary" : "bg-white"}`}
           >
             <h5 className="mb-4 fw-bold">Top Categories</h5>
             <div style={{ width: "100%", height: 300 }}>
-              <ResponsiveContainer>
+              <ResponsiveContainer width="100%" height="100%">
                 <PieChart>
                   <Pie
                     data={pieData}

@@ -80,9 +80,16 @@ const Login = ({ onLogin }) => {
         <div className="text-center mt-4">
           <p className="text-muted small mb-0">
             Forgot your password?{" "}
-            <a href="#" className="text-primary text-decoration-none fw-bold">
+            <button
+              type="button"
+              className="btn btn-link p-0 text-primary text-decoration-none fw-bold border-0 align-baseline shadow-none"
+              style={{ fontSize: "inherit" }}
+              onClick={(e) => {
+                e.preventDefault();
+              }}
+            >
               Reset here
-            </a>
+            </button>
           </p>
         </div>
       </div>

@@ -16,21 +16,21 @@ const Orders = ({ isDarkMode }) => {
   const [orders, setOrders] = useState([
     {
       id: "49488",
-      customer: "Rahul Sharma",
+      customer: "Hiten Sharma",
       item: "Laptop",
       amount: 55000,
       status: "Pending",
     },
     {
       id: "47794",
-      customer: "Amit Kumar",
+      customer: "Raju Kumar",
       item: "iPhone 15",
       amount: 72000,
       status: "Delivered",
     },
     {
       id: "48833",
-      customer: "Sonu Singh",
+      customer: "Ramesh Singh",
       item: "Headphones",
       amount: 2500,
       status: "Cancelled",
